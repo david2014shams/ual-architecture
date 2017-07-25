@@ -20,13 +20,17 @@
       }
     </style>
 
-      <h1>Microservices</h1>
-      <p>Split your big monolethic applications int smaller ore manageable Microservices</p>
+    <h1>Microservices</h1>
+    <p>Split your big monolethic applications int smaller ore manageable Microservices</p>
 
-      <h3>Components</h3>
+    <h3>Components</h3>
 
-      <demo-snippet>
+    <demo-snippet>
       <template>
+        <paper-input label="Enter name"></paper-input>
+        <slot name="jsfiddle"></slot>
+        <paper-icon-button icon="menu">icon button</paper-icon-button>
+
         <paper-input label="text input"></paper-input>
         <paper-input label="text input" value="pre-filled"></paper-input>
         <paper-textarea label="autoresizing textarea input"></paper-textarea>
@@ -35,20 +39,34 @@
       </template>
     </demo-snippet>
 
-    <paper-input label="Enter name"></paper-input>
-    <slot name="jsfiddle"></slot>
-    <paper-icon-button icon="menu">icon button</paper-icon-button>
-            
-      <!-- <script async src="//jsfiddle.net/davidshams/BEzJc/494/embed/js,html,css,result/dark/"> -->
-  
 
-    </template>
+    <marked-element>
+      <div slot="markdown-html"></div>
+      <script type="text/markdown">
+    Check out my markdown!
+
+    We can even embed elements without fear of the HTML parser mucking up their
+    textual representation:
+
+    ```html
+    <awesome-sauce>
+      <div>Oops, I'm about to forget to close this div.
+    </awesome-sauce>
+    ```
+  </script>
+    </marked-element>
+
+
+    <!-- <script async src="//jsfiddle.net/davidshams/BEzJc/494/embed/js,html,css,result/dark/"> -->
+
+
+  </template>
 
   <script>
-    class MyView4 extends Polymer.Element {
-      static get is() { return 'my-view4'; }
-    }
+      class MyView4 extends Polymer.Element {
+          static get is() { return 'my-view4'; }
+      }
 
-    window.customElements.define(MyView4.is, MyView4);
+      window.customElements.define(MyView4.is, MyView4);
   </script>
 </dom-module>

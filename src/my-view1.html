@@ -1,12 +1,3 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
@@ -21,10 +12,51 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <!-- <div class="card"> -->
-      <!-- <div class="circle">General Guidelines</div> -->
-      <h1>General Guidelines</h1>
-    <!-- </div> -->
+
+    <h1>UNITED AIRLINES COMPASS ARCHITECTURE</h1>
+
+    <section>
+      <blockquote>
+        There are only two hard things in Computer Science: cache invalidation and naming things.
+        <address>-- Phil Karlton</address>
+      </blockquote>
+
+      <p>
+        Getting things working and done is one thing, and getting things done properly and making them work it totally different thing.
+        <br>
+      The goal is to narrow the gap between the two. So, please pay special attention to things that may look small changes – which are really not small at all and will have enormous impact on your code maitanability, scalability and debuggability ( yes, I just made up that term ).
+      <p>As you all know, under the hood every code that you write is the same zeros and ones <code>01010101010101010101010</code>.
+
+      So, why have we moved away from writing computer programs in zeros and ones?
+
+    </p>
+      Because, they are
+      <ul class="square" type="square">
+        <li><span>hard to understand</span></li>
+        <li><span>hard to maintain</span></li>
+        <li><span>hard to scale</span></li>
+        <li><span>hard to debug</span></li>
+      </ul>
+
+      Computer Scientests spent life-time of their careers to come up with <code>best practices</code>, <code>design patterns</code> and <code>architectures</code>.
+
+      <div class="emphasize">We have to use them !</div>
+
+      <blockquote>
+        If I have seen further it is by standing on the shoulders of giants. <sup>Sir Isaac Newton (1643 – 1727 )</sup>
+      </blockquote>
+
+
+      There are small deviations from the way you may be writing code and architecting your solutions, which may have a large impact on the future of code maintainability, reusability, scalability and ease of understanding.
+
+      <div class="emphasize">In programming small change may not be so small at all !</div>
+
+
+      </p>
+
+    </section>
+
+
   </template>
 
   <script>

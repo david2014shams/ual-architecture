@@ -1,7 +1,12 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../bower_components/iron-iconset-svg/iron-iconset-svg.html">
+
+
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 
 <link rel="import" href="shared-styles.html">
 
@@ -20,7 +25,17 @@
 
       <h3>Components</h3>
 
-      <paper-input label="Enter name">
+      <demo-snippet>
+      <template>
+        <paper-input label="text input"></paper-input>
+        <paper-input label="text input" value="pre-filled"></paper-input>
+        <paper-textarea label="autoresizing textarea input"></paper-textarea>
+        <paper-input label="password input" type="password"></paper-input>
+        <paper-input label="disabled input" disabled value="batman"></paper-input>
+      </template>
+    </demo-snippet>
+
+    <paper-input label="Enter name"></paper-input>
     <slot name="jsfiddle"></slot>
     <paper-icon-button icon="menu">icon button</paper-icon-button>
             

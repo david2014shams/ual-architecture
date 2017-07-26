@@ -58,6 +58,11 @@
         color: black;
         font-weight: bold;
       }
+      app-toolbar {
+        /*background-color: orange; !*TODO: change to named color variables*!*/
+        /*color: #fff;*/
+        /*margin: 20px 0;*/
+      }
     </style>
 
     <app-location route="{{route}}"></app-location>
@@ -70,7 +75,7 @@
     <app-drawer-layout fullbleed>
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer">
-        <app-toolbar>Compass</app-toolbar>
+        <app-toolbar><div main-title>Compass</div></app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="view1">General Guideline</a>
           <a name="view2" href="view2">Onboarding</a>

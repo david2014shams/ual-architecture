@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="ual-links">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <!--<h2>[[name]]</h2>-->
+    <h3>Links</h3>
+    <details>
+      <summary>IDEs</summary>
+      <p>There are, of course, powerful professional paid IDEs such as Visual Studio and WebStorm.</p>
+      <p>However, for certain front end development purposes there are super light and fast IDEs such as <code>Atom</code> and <code>VS Code</code></p>
+      <p><a href="https://code.visualstudio.com/docs/introvideos/debugging">Video how to debug in VS Code ( there is a lot more on this site )</a></p>
+    </details>
+
+  </template>
+
+  <script>
+    /**
+     * `ual-links`
+     * Useful links recommended for United Airlines Employees
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UalLinks extends Polymer.Element {
+      static get is() { return 'ual-links'; }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: 'ual-links'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UalLinks.is, UalLinks);
+  </script>
+</dom-module>

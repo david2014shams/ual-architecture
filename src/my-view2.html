@@ -11,8 +11,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+<link rel="import" href="../bower_components/ual-links/ual-links.html">
+
+
 <dom-module id="my-view2">
   <template>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+
     <style include="shared-styles">
       :host {
         display: block;
@@ -24,9 +35,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- <div class="card"> -->
     <!-- <div class="circle">2</div> -->
     <h1>Onboarding</h1>
-
-
-
 
 
     <details>
@@ -58,6 +66,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <p>
         <code>git chekcout</code><br>
       </p>
+      <p>
+        For example you can create your own free git repository on GitHub or clone one of the existing ones and start practicing these commands.
+      </p>
+      <p>
+        <code> git clone https://github.com/johnpapa/ng-demos.git</code>
+      </p>
+      <p>
+        Note that you cannot push to a private repository, unless the author granted permission to do so.
+      </p>
+
+      <div class="vertical-section-container centered">
+        <demo-snippet>
+          <template>
+            <ual-links></ual-links><!--TODO: fix ual-links not showing-->
+          </template>
+        </demo-snippet>
+      </div>
 
     </details>
 
@@ -71,7 +96,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <summary>Web Components</summary>
       <!-- <p>TODO:</p> -->
       <p>If you are using <code>Angular 1.5+</code> check this resource for how to create components in AngularJS</p>
-
       <p>
         <code>
           <a href="https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents">Building Components with Angular 1.5 by Scott Allen</a>
@@ -81,6 +105,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <p><code>Polymer</code> is a great library for creating reusable Web Components and more</p>
     </details>
     <!-- </div> -->
+        
+    <ual-links></ual-links>
+    
   </template>
 
   <script>

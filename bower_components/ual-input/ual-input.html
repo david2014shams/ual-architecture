@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="ual-input">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `ual-input`
+     * United Airlines input element
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UalInput extends Polymer.Element {
+      static get is() { return 'ual-input'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'ual-input'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UalInput.is, UalInput);
+  </script>
+</dom-module>

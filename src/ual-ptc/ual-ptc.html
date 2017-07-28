@@ -1,0 +1,131 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+
+<link rel="import" href="../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+
+<dom-module id="ual-ptc">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <h2>[[name]]</h2>
+
+        <paper-input label="PTC">
+        </paper-input>          <paper-icon-button suffix on-tap="negOne" icon="icons:remove" alt="clear" title="clear">-</paper-icon-button>
+
+
+        <paper-input always-float-label label="Floating label"></paper-input>
+        <paper-input label="username">
+
+        </paper-input>
+
+        <template is="dom-repeat" items="{{travelerCategory}}">
+
+            <!--//TODO: MOVE THIS TO ual-ptc-->
+            <div class="bordered">
+                <paper-input label="{{item}}" value="{{travelerCount}}" always-float-label>
+                    <iron-icon icon="icons:remove" alt="clear" slot="suffix" on-tap="negOne"></iron-icon>
+                    <!--<iron-icon icon="icons:add" alt="clear" slot="prefix"></iron-icon>-->
+                    <iron-icon icon="icons:add" alt="clear" slot="suffix" on-tap="addOne"></iron-icon>
+                    <!--<paper-icon-button suffix on-tap="negOne" icon="icons:remove" alt="clear" title="clear">-</paper-icon-button>-->
+                    <!--<paper-icon-button suffix on-tap="addOne" icon="add" alt="clear" title="clear"></paper-icon-button>-->
+                    <!--<paper-icon-button icon="add"></paper-icon-button>-->
+                </paper-input>
+            </div>
+
+        </template>
+    </template>
+
+    <script>
+        /**
+         * `ual-ptc`
+         * United Airlines passenger type code
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class UalPtc extends Polymer.Element {
+            static get is() { return 'ual-ptc'; }
+            static get properties() {
+                return {
+                    name: {
+                        type: String,
+                        value: 'ual-ptc'
+                    },
+                    travelerCount: {
+                        type: Number,
+                        value: null
+                    },
+                    travelerCategory: {
+                        type: Array,
+                        value: [
+                            "Adult (18-64)",
+                            "Senior (64+)",
+                            "Children (2-4)",
+                            "Children (5-7)",
+                            "Children (8-11)",
+                            "Children (12-17)",
+                            "Infant Under 2",
+                            "Infant on Lap"
+                        ]
+
+                    }
+
+
+                };
+            }
+
+
+            negOne(){
+                if(this.travelerCount !== 0){
+                    this.travelerCount--;
+                }
+            }
+
+
+            addOne() {
+                this.travelerCount++;
+            }
+
+        }
+
+        window.customElements.define(UalPtc.is, UalPtc);
+    </script>
+</dom-module>
+
+
+<!-- Polymer 1.0 JavaScrip implementation: -->
+<!-- <dom-module id="ual-ptc">
+
+    <template is="dom-repeat" items="{{travelerCategory}}">
+
+        <div class="bordered">
+            <paper-input label="{{item}}" value="{{travelerCount}}" always-float-label>
+                <paper-icon-button suffix on-tap="negOne" icon="icons:remove" alt="clear" title="clear">-</paper-icon-button>
+                <paper-icon-button suffix on-tap="addOne" icon="add" alt="clear" title="clear"></paper-icon-button>
+                <paper-icon-button icon="add"></paper-icon-button>
+            </paper-input>
+        </div>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'ual-ptc'
+        })
+    </script>
+</dom-module> -->
+

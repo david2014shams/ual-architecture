@@ -10,8 +10,21 @@
 
 <link rel="import" href="shared-styles.html">
 
+
+<!--<script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>-->
+
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+<link rel="import" href="ual-ptc/ual-ptc.html">
+
+
+
 <dom-module id="my-view4">
   <template>
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
     <style include="shared-styles">
       :host {
         display: block;
@@ -24,37 +37,35 @@
     <p>Split your big monolethic applications int smaller ore manageable Microservices</p>
 
     <h3>Components</h3>
+    <div class="do">
+      A component is truely a component if it can be used by itself with only its dependencies included without any of its code modification.
+    </div>
 
-    <demo-snippet>
-      <template>
-        <paper-input label="Enter name"></paper-input>
-        <slot name="jsfiddle"></slot>
-        <paper-icon-button icon="menu">icon button</paper-icon-button>
+    <!--<demo-snippet>-->
+      <!--<template>-->
+        <!--<paper-input label="Enter name"></paper-input>-->
+        <!--<slot name="jsfiddle"></slot>-->
+        <!--<paper-icon-button icon="menu">icon button</paper-icon-button>-->
 
-        <paper-input label="text input"></paper-input>
-        <paper-input label="text input" value="pre-filled"></paper-input>
-        <paper-textarea label="autoresizing textarea input"></paper-textarea>
-        <paper-input label="password input" type="password"></paper-input>
-        <paper-input label="disabled input" disabled value="batman"></paper-input>
-      </template>
-    </demo-snippet>
+        <!--<paper-input label="text input"></paper-input>-->
+        <!--<paper-input label="text input" value="pre-filled"></paper-input>-->
+        <!--<paper-textarea label="autoresizing textarea input"></paper-textarea>-->
+        <!--<paper-input label="password input" type="password"></paper-input>-->
+        <!--<paper-input label="disabled input" disabled value="batman"></paper-input>-->
+      <!--</template>-->
+    <!--</demo-snippet>-->
 
 
-    <marked-element>
-      <div slot="markdown-html"></div>
-      <script type="text/markdown">
-    Check out my markdown!
 
-    We can even embed elements without fear of the HTML parser mucking up their
-    textual representation:
-
-    ```html
-    <awesome-sauce>
-      <div>Oops, I'm about to forget to close this div.
-    </awesome-sauce>
-    ```
-  </script>
-    </marked-element>
+    <!--<div class="vertical-section-container centered">-->
+      <!--<h3>ual-ptc</h3>-->
+      <!--<demo-snippet>-->
+        <!--<template>-->
+          <!--A component is truely a component if it can be used by itself with only its dependencies included without any of its code modification.-->
+          <!--<ual-ptc></ual-ptc>-->
+        <!--</template>-->
+      <!--</demo-snippet>-->
+    <!--</div>-->
 
 
     <!-- <script async src="//jsfiddle.net/davidshams/BEzJc/494/embed/js,html,css,result/dark/"> -->

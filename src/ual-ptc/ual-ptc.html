@@ -20,10 +20,9 @@
                 display: block;
             }
         </style>
-        <h2>[[name]]</h2>
+        <!--<h2>[[name]]</h2>-->
 
-
-        <template is="dom-repeat" items="{{travelerCategory}}">
+        <!--<template is="dom-repeat" items="{{travelerCategory}}">-->
 
             <!--//TODO: MOVE THIS TO ual-ptc-->
             <div class="bordered">
@@ -37,7 +36,7 @@
                 </paper-input>
             </div>
 
-        </template>
+        <!--</template>-->
     </template>
 
     <script>
@@ -60,21 +59,22 @@
                     travelerCount: {
                         type: Number,
                         value: null
-                    },
-                    travelerCategory: {
-                        type: Array,
-                        value: [
-                            "Adult (18-64)",
-                            "Senior (64+)",
-                            "Children (2-4)",
-                            "Children (5-7)",
-                            "Children (8-11)",
-                            "Children (12-17)",
-                            "Infant Under 2",
-                            "Infant on Lap"
-                        ]
-
                     }
+//                    ,
+//                    travelerCategory: {
+//                        type: Array,
+//                        value: [
+//                            "Adult (18-64)",
+//                            "Senior (64+)",
+//                            "Children (2-4)",
+//                            "Children (5-7)",
+//                            "Children (8-11)",
+//                            "Children (12-17)",
+//                            "Infant Under 2",
+//                            "Infant on Lap"
+//                        ]
+//
+//                    }
 
 
                 };

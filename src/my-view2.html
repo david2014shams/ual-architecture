@@ -22,18 +22,72 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <!-- <div class="card"> -->
-      <!-- <div class="circle">2</div> -->
-      <h1>Onboarding</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+    <!-- <div class="circle">2</div> -->
+    <h1>Onboarding</h1>
+
+
+
+
+
+    <details>
+      <summary>Get TFS access</summary>
+      <p>Ask your manager to give you access to the repositories you will be working with</p>
+    </details>
+
+    <details>
+      <summary>Clone repository</summary>
+      <p>Clone repository either from your favorite IDE or from command line</p>
+      <p>Command line cloning:</p>
+      <p>
+        <code>git clone [your_repository_url] </code>
+      </p>
+    </details>
+
+    <details>
+      <summary>Git commonly used commands</summary>
+      <!-- <p>TODO: </p> -->
+      <p>
+        <code>git clone</code><br>
+      </p>
+      <p>
+        <code>git push</code><br>
+      </p>
+      <p>
+        <code>git pull</code><br>
+      </p>
+      <p>
+        <code>git chekcout</code><br>
+      </p>
+
+    </details>
+
+    <details>
+      <summary>Node and npm</summary>
+      <!-- <p>TODO:</p> -->
+      <p>[COMING SOON]</p>
+    </details>
+
+    <details>
+      <summary>Web Components</summary>
+      <!-- <p>TODO:</p> -->
+      <p>If you are using <code>Angular 1.5+</code> check this resource for how to create components in AngularJS</p>
+
+      <p>
+        <code>
+          <a href="https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents">Building Components with Angular 1.5 by Scott Allen</a>
+        </code>
+      </p>
+      <p><code>Angular 2/4</code> is component based out of the box</p>
+      <p><code>Polymer</code> is a great library for creating reusable Web Components and more</p>
+    </details>
     <!-- </div> -->
   </template>
 
   <script>
-    class MyView2 extends Polymer.Element {
-      static get is() { return 'my-view2'; }
-    }
+      class MyView2 extends Polymer.Element {
+          static get is() { return 'my-view2'; }
+      }
 
-    window.customElements.define(MyView2.is, MyView2);
+      window.customElements.define(MyView2.is, MyView2);
   </script>
 </dom-module>

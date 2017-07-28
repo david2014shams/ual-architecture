@@ -22,14 +22,6 @@
         </style>
         <h2>[[name]]</h2>
 
-        <paper-input label="PTC">
-        </paper-input>          <paper-icon-button suffix on-tap="negOne" icon="icons:remove" alt="clear" title="clear">-</paper-icon-button>
-
-
-        <paper-input always-float-label label="Floating label"></paper-input>
-        <paper-input label="username">
-
-        </paper-input>
 
         <template is="dom-repeat" items="{{travelerCategory}}">
 
@@ -90,8 +82,9 @@
 
 
             negOne(){
-                if(this.travelerCount !== 0){
-                    this.travelerCount--;
+                if(this.travelerCount === null){
+                } else {
+                    if( this.travelerCount !== 0 ) {this.travelerCount--;}
                 }
             }
 

@@ -1,6 +1,7 @@
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/ten-commandments/ten-commandments.html">
 
 <dom-module id="my-view1">
   <template>
@@ -16,6 +17,9 @@
       sup{
         font-size: smaller;
         color: blue;
+      }
+      ten-commandments{
+                padding: 0.5em 10px;
       }
     </style>
 
@@ -68,8 +72,14 @@
       <p>      Computer Scientists spent life-time of their careers to come up with <code>best practices</code>, <code>design patterns</code> and <code>architectures</code>.
       </p>
 
-      <div class="emphasize"><h3>We have to use them !</h3></div>
+      <div class="emphasize"><h3>We have to use them !</h3>
+        <details>
+        <summary>10 coding commandments</summary>
+        <ten-commandments></ten-commandments>
+        </details>
+      </div>
 
+      
       <blockquote>
         If I have seen further it is by standing on the shoulders of giants. <sup>Sir Isaac Newton (1643 – 1727 )</sup>
       </blockquote>

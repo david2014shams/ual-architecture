@@ -10,6 +10,9 @@
 
         padding: 10px;
       }
+      h3{
+        margin-left: 12px;
+      }
     </style>
 
 
@@ -22,21 +25,34 @@
       </blockquote>
 
       <p>        Ask 10 developers to write a piece of code and you will get 10 different codes. Each developer will relegiously defend his or her way of coding.
-        <div class="do">Some ways of writing code does work in real life - <code>DISIGN PATTERNS</code></div>
-        <div class="dont">Some way of writing code does NOT works in real life - <code>ANTI PATTERNS</code></div>
+      <div class="do">Some ways of writing code does work in real life - <code>DISIGN PATTERNS</code></div>
+      <div class="dont">Some way of writing code does NOT works in real life - <code>ANTI PATTERNS</code></div>
+      </p>
+
+      <p>
+      <h3>Symptoms of <code>ANTI PATTERNS</code>:</h3>
+      <ul class="square warning" type="square">
+        <li><span>High defect rate</span></li>
+        <li><span>hard to make modifications</span></li>
+        <li><span>code bloat</span></li>
+        <li><span>hard to debug</span></li>
+        <li><span>developer frustration</span></li>
+        <li><span>management frustration</span></li>
+        <li><span>business owner frustration</span></li>
+      </ul>
       </p>
       <p>
         Getting things working and done is one thing, and getting things done properly and making them work it totally different thing.
         <br>
-      The goal is to narrow the gap between the two. So, please pay special attention to things that may look small changes – which are really not small at all and will have enormous impact on your code maintainability, scalability and debugability ( yes, I just made up that term ).
+        The goal is to narrow the gap between the two. So, please pay special attention to things that may look small changes – which are really not small at all and will have enormous impact on your code maintainability, scalability and debugability ( yes, I just made up that term ).
       <p>As you all know, under the hood every code that you write is just zeros and ones <code>01010101010101010101010</code>.
 
-      So, why have we moved away from writing computer programs in zeros and ones?
-      <br>
-      <br>
-      Because, they are
-    </p>
-      
+        So, why have we moved away from writing computer programs in zeros and ones?
+        <br>
+        <br>
+        Because, they are
+      </p>
+
       <ul class="square" type="square">
         <li><span>hard to understand</span></li>
         <li><span>hard to maintain</span></li>
@@ -55,12 +71,12 @@
 
 
       <p>There are small deviations from the way you may be writing code and architecting your solutions, which may have a large impact on the future of code maintainability, reusability, scalability and ease of understanding.
-        </p>
+      </p>
 
       <div class="emphasize">In programming small change may not be so small at all !</div>
 
 
-      </p>
+      <!--</p>-->
 
     </section>
 
@@ -68,10 +84,10 @@
   </template>
 
   <script>
-    class MyView1 extends Polymer.Element {
-      static get is() { return 'my-view1'; }
-    }
+      class MyView1 extends Polymer.Element {
+          static get is() { return 'my-view1'; }
+      }
 
-    window.customElements.define(MyView1.is, MyView1);
+      window.customElements.define(MyView1.is, MyView1);
   </script>
 </dom-module>

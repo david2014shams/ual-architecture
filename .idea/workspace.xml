@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd3a761c-9728-4139-ab3a-d8a3909c9998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/my-view6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my-app.html" afterPath="$PROJECT_DIR$/src/my-app.html" />
-    </list>
+    <list default="true" id="dd3a761c-9728-4139-ab3a-d8a3909c9998" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -52,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ten-commandments.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ten-commandments.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-321">
-              <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="474">
+              <caret line="72" column="19" lean-forward="false" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -72,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="separation-concern.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="separation-concern.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower_components/separation-concern/separation-concern.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -172,10 +168,10 @@
         <option value="$PROJECT_DIR$/src/shared-styles.html" />
         <option value="$PROJECT_DIR$/bower_components/ual-links/ual-links.html" />
         <option value="$PROJECT_DIR$/src/my-view5.html" />
-        <option value="$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html" />
         <option value="$PROJECT_DIR$/src/my-app.html" />
         <option value="$PROJECT_DIR$/src/my-view6.html" />
         <option value="$PROJECT_DIR$/bower_components/separation-concern/separation-concern.html" />
+        <option value="$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html" />
       </list>
     </option>
   </component>
@@ -431,12 +427,12 @@
       <workItem from="1500997551522" duration="11686000" />
       <workItem from="1501167388746" duration="1023000" />
       <workItem from="1501254518608" duration="3070000" />
-      <workItem from="1501265907057" duration="18982000" />
+      <workItem from="1501265907057" duration="19782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34761000" />
+    <option name="totallyTimeSpent" value="35561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -778,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/my-view1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-791">
@@ -814,6 +802,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="72" column="19" lean-forward="false" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
           <folding />
         </state>
       </provider>

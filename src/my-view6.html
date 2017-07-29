@@ -11,90 +11,47 @@
 <link rel="import" href="../bower_components/separation-concern/separation-concern.html">
 <link rel="import" href="shared-styles.html">
 
-<dom-module id="my-view5"><!--Separation of concern-->
+<link rel="import" href="../bower_components/separation-concern/separation-concern.html">
+<link rel="import" href="ual-ptc/ual-ptc.html">
+<link rel="import" href="ual-ptc-list/ual-ptc-list.html">
+<link rel="import" href="../bower_components/ten-commandments/ten-commandments.html">
+
+
+<dom-module id="my-view6"><!--Separation of concern-->
   <template>
     <style include="shared-styles">
       :host {
         display: block;
-
         padding: 10px;
+        margin-left: 70px;
+      }
+      code{
+        background-color: yellow;
       }
     </style>
 
-    <h1>Separation of concerns 2</h1>
-    <p>Split your big monolethic applications int smaller ore manageable Microservices</p>
+    <h1>Components used in this documentation</h1>
 
-    <h3>Separation of concern</h3>
+    <h3><code>&ltual-ptc&gt</code></h3>
+    <ual-ptc></ual-ptc>
 
-    <div class="dont">DON'T mix deferent concerns!</div>
-    <div>
+    <h3><code>&ltual-ptc-list&gt</code></h3>
+    <ual-ptc-list></ual-ptc-list>
 
+    <h3><code>&ltseparation-concern&gt</code></h3>
+    <separation-concern></separation-concern>
 
-      <p>
-        A <code>concern</code> such as style, data, logic etc. should not be mixed with each other. Mixing them will end up with hard to maintain and hard to debug code.
-      </p>
-      <p>Angular 2 does a pretty good job in forcing separation of concern by being an opinionated framework.
-        However, it is still possible to create spaghetti code in Angular 2. This was especially true of Angular 1 when you could put alsmost your entire application in a controller.
-      </p>
-    </div>
-
-    <div class="do">DO: pass your needed parameters to your functions and inject dependencies
-      needed for your services and controllers.
-    </div>
-
-    <!--<separation-concern></separation-concern>-->
-
-
-    <!--<demo-snippet>-->
-    <!--<template>-->
-
-    <!--<separation-concern></separation-concern>-->
-
-    <!--</template>-->
-    <!--</demo-snippet>-->
-
-    <div class="dont">DON'T: this function is not reusable!</div>
-
-    <marked-element>
-      <div slot="markdown-html"></div>
-      <script type="text/markdown">
-
-       ```javascript
-          function changeTcd(){
-            $('.tcd-class').doSomething();// Not reusable
-          }
-        ```
-      </script>
-    </marked-element>
-
-    <div class="do">DO: this function is reusable!</div>
-    <marked-element>
-      <div slot="markdown-html"></div>
-      <script type="text/markdown">
-
-      ```javascript
-        function changeTcd(selector){
-          $(selector).doSomething();// Reusable
-        }
-
-        ```
-      </script>
-    </marked-element>
-
-    <div class="dont">Imagine, in order to use <code>Math.sqrt()</code> you would have to go to the code of <code>Math.sqrt()</code> and pass your number there!</div>
-
-
-
-    <!-- <script async src="//jsfiddle.net/davidshams/BEzJc/494/embed/js,html,css,result/dark/"> -->
+    <h3><code>&ltten-commandments&gt</code></h3>
+    <ten-commandments></ten-commandments>
 
 
   </template>
 
   <script>
-      class MyView5 extends Polymer.Element {
-          static get is() { return 'my-view5'; }
+      class MyView6 extends Polymer.Element {
+          static get is() { return 'my-view6'; }
       }
 
-      window.customElements.define(MyView5.is, MyView5);
+      window.customElements.define(MyView6.is, MyView6);
   </script>
 </dom-module>

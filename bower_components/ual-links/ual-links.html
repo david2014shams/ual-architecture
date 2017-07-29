@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../../src/shared-styles.html">
 
 <dom-module id="ual-links">
   <template>
@@ -39,6 +40,31 @@
 
     <details>
       <summary>Components in Angular 1.5+</summary>
+      <p>As of Angular 1.5 you can build reusable components</p>
+      <div class="do">DO: build reusable components.</div>
+      <marked-element>
+        <div slot="markdown-html"></div>
+        <script type="text/markdown">
+
+
+
+        ```javascript
+
+        angular.module('heroApp').component('heroDetail', {
+        templateUrl: 'heroDetail.html',
+        bindings: {
+        hero: '='
+        }
+        });
+
+        ```
+
+
+      </script>
+      </marked-element>
+      <div class="dont">DON'T: avoid putting all your code in in single controller or attaching it to $scope. </div>
+      <a href="https://docs.angularjs.org/guide/component" target="_blank">Understanding Components</a>
+      <br>
       <a href="https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents" target="_blank">Building Components with Angular 1.5 by Scott Allen</a>
     </details>
 
@@ -50,26 +76,26 @@
   </template>
 
   <script>
-    /**
-     * `ual-links`
-     * Useful links recommended for United Airlines Employees
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class UalLinks extends Polymer.Element {
-      static get is() { return 'ual-links'; }
-      static get properties() {
-        return {
-          name: {
-            type: String,
-            value: 'ual-links'
+      /**
+       * `ual-links`
+       * Useful links recommended for United Airlines Employees
+       *
+       * @customElement
+       * @polymer
+       * @demo demo/index.html
+       */
+      class UalLinks extends Polymer.Element {
+          static get is() { return 'ual-links'; }
+          static get properties() {
+              return {
+                  name: {
+                      type: String,
+                      value: 'ual-links'
+                  }
+              };
           }
-        };
       }
-    }
 
-    window.customElements.define(UalLinks.is, UalLinks);
+      window.customElements.define(UalLinks.is, UalLinks);
   </script>
 </dom-module>

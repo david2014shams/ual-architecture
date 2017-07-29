@@ -30,36 +30,41 @@
 
     A <code>concern</code> such as style, data, logic etc. should not be mixed with each other. Mixing them will end up with hard to maintain and hard to debug code.
     <p>Angular 2 does a pretty good job in forcing separation of concern by being an opinionated framework.
-      However, it is still possible to create spaghetti code in Angular 2. This was especially true of Angular 1 when you could put alsmost your entire application in a controller </p>
+      However, it is still possible to create spaghetti code in Angular 2. This was especially true of Angular 1 when you could put alsmost your entire application in a controller.
+    </p>
+    <div class="do">DO: pass your needed parameters to your functions and inject dependencies
+      needed for your services and controllers.
+    </div>
+
+    <!--<separation-concern></separation-concern>-->
 
 
+    <!--<demo-snippet>-->
+      <!--<template>-->
 
+        <!--<separation-concern></separation-concern>-->
 
+      <!--</template>-->
+    <!--</demo-snippet>-->
 
-    <demo-snippet>
-      <template>
-
-        <separation-concern></separation-concern>
-
-      </template>
-    </demo-snippet>
-
+    <div class="dont">DON'T: this function is not reusable!</div>
 
     <marked-element>
       <div slot="markdown-html"></div>
       <script type="text/markdown">
 
-       <div class="dont">DON'T: this function is not reusable!</div>
-
-
-        ```javascript
-
-        function changeTcd(){
-          $('.tcd-class').doSomething();// Not reusable
-        }
+       ```javascript
+          function changeTcd(){
+            $('.tcd-class').doSomething();// Not reusable
+          }
         ```
+      </script>
+    </marked-element>
 
-       <div class="do">DO: this function is reusable!</div>
+    <div class="do">DO: this function is reusable!</div>
+    <marked-element>
+      <div slot="markdown-html"></div>
+      <script type="text/markdown">
 
       ```javascript
         function changeTcd(selector){

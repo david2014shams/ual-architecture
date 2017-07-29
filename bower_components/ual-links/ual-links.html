@@ -3,9 +3,13 @@
 
 <dom-module id="ual-links">
   <template>
-    <style>
+    <style include="shared-styles">
       :host {
         display: block;
+      }
+      marked-element {
+        padding: 15px;
+        margin-left: 20px;
       }
     </style>
     <!--<h2>[[name]]</h2>-->
@@ -41,7 +45,7 @@
     <details>
       <summary>Components in Angular 1.5+</summary>
       <p>As of Angular 1.5 you can build reusable components</p>
-      <div class="do">DO: build reusable components.</div>
+      <div class="do">DO: build reusable components. Note the <code>component</code> function added in Angular 1.5</div>
       <marked-element>
         <div slot="markdown-html"></div>
         <script type="text/markdown">

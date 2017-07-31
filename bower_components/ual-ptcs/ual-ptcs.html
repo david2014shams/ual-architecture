@@ -1,0 +1,47 @@
+<link rel="import" href="../paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../paper-item/paper-item.html">
+<link rel="import" href="../paper-listbox/paper-listbox.html">
+<link rel="import" href="../polymer/polymer.html">
+
+<link rel="import" href="../paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="../ual-ptc/ual-ptc.html">
+
+<dom-module id="ual-ptc">
+
+    <template is="dom-repeat" items="{{travelerCategory}}">
+
+        <ual-ptc></ual-ptc>
+        <div class="bordered">
+            <paper-input label="{{item}}" value="{{travelerCount}}" always-float-label>
+                <paper-icon-button suffix on-tap="negOne" icon="icons:remove" alt="clear" title="clear">-</paper-icon-button>
+                <paper-icon-button suffix on-tap="addOne" icon="add" alt="clear" title="clear"></paper-icon-button>
+                <paper-icon-button icon="add"></paper-icon-button>
+            </paper-input>
+        </div>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'ual-ptc',
+
+            properties: {
+                travelerCategory: {
+                    type: Array,
+                    value: [
+                        "Adult (18-64)",
+                        "Senior (64+)",
+                        "Children (2-4)",
+                        "Children (5-7)",
+                        "Children (8-11)",
+                        "Children (12-17)",
+                        "Infant Under 2",
+                        "Infant on Lap"
+                    ]
+                }
+            }
+        })
+    </script>
+</dom-module>
+

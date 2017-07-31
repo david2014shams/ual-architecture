@@ -1,0 +1,57 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="separation-concern">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <!--<h2>[[name]]</h2>-->
+
+
+    <marked-element>
+      <div slot="markdown-html"></div>
+      <script type="text/markdown">
+
+        ```html
+        ```
+
+        ```javascript
+        function changeTcd(){
+            $('.tcd-class').doSomething();// Not reusable
+        }
+
+        function changeTcd(selector){
+            $(selector).doSomething();// Reusable
+        }
+        ```
+      </script>
+    </marked-element>
+
+  </template>
+
+  <script>
+      /**
+       * `separation-concern`
+       * Separation of concern
+       *
+       * @customElement
+       * @polymer
+       * @demo demo/index.html
+       */
+      class SeparationConcern extends Polymer.Element {
+          static get is() { return 'separation-concern'; }
+          static get properties() {
+              return {
+                  name: {
+                      type: String,
+                      value: 'separation-concern'
+                  }
+              };
+          }
+      }
+
+      window.customElements.define(SeparationConcern.is, SeparationConcern);
+  </script>
+</dom-module>

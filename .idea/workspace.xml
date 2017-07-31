@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3a761c-9728-4139-ab3a-d8a3909c9998" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my-view2.html" afterPath="$PROJECT_DIR$/src/my-view2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared-styles.html" afterPath="$PROJECT_DIR$/src/shared-styles.html" />
     </list>
@@ -94,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-view2.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my-view2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/my-view2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="98" column="53" lean-forward="false" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
+            <state relative-caret-position="330">
+              <caret line="93" column="126" lean-forward="false" selection-start-line="93" selection-start-column="126" selection-end-line="93" selection-end-column="126" />
               <folding>
                 <element signature="n#style#0;n#template#0;n#dom-module#0;n#!!top" expanded="false" />
               </folding>
@@ -106,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shared-styles.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shared-styles.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shared-styles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+            <state relative-caret-position="541">
+              <caret line="135" column="29" lean-forward="true" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -176,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/my-view6.html" />
         <option value="$PROJECT_DIR$/bower_components/separation-concern/separation-concern.html" />
         <option value="$PROJECT_DIR$/bower_components/ten-commandments/ten-commandments.html" />
-        <option value="$PROJECT_DIR$/src/my-view2.html" />
         <option value="$PROJECT_DIR$/src/shared-styles.html" />
+        <option value="$PROJECT_DIR$/src/my-view2.html" />
       </list>
     </option>
   </component>
@@ -232,79 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-links" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ten-commandments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ual-architecture-guidelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ten-commandments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,12 +361,12 @@
       <workItem from="1500997551522" duration="11686000" />
       <workItem from="1501167388746" duration="1023000" />
       <workItem from="1501254518608" duration="3070000" />
-      <workItem from="1501265907057" duration="20467000" />
+      <workItem from="1501265907057" duration="21515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36246000" />
+    <option name="totallyTimeSpent" value="37294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -452,7 +379,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24954791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327551" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.327551" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -805,21 +732,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/my-view2.html">
+    <entry file="file://$PROJECT_DIR$/src/shared-styles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="98" column="53" lean-forward="false" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#template#0;n#dom-module#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="541">
+          <caret line="135" column="29" lean-forward="true" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared-styles.html">
+    <entry file="file://$PROJECT_DIR$/src/my-view2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="93" column="126" lean-forward="false" selection-start-line="93" selection-start-column="126" selection-end-line="93" selection-end-column="126" />
+          <folding>
+            <element signature="n#style#0;n#template#0;n#dom-module#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

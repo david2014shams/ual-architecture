@@ -1,0 +1,214 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../../src/shared-styles.html">
+
+<dom-module id="ten-commandments">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+      li{
+        padding-bottom: 5px;
+        border-bottom: solid 1px transparent;
+      }
+
+      /*animation*/
+      .nav li ul {
+      /*.ol li span {*/
+        position:absolute;
+        left:0;
+        top:36px;
+        z-index:1;
+        max-height:0;
+        overflow:hidden;
+        -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+        -webkit-transform-origin:50% 0;
+        -webkit-transition:350ms;
+        -moz-transition:350ms;
+        -o-transition:350ms;
+        transition:350ms;
+      }
+      .nav ul > li:hover ul {
+        max-height:1000px;
+        -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+      }
+
+      .nav ul {
+        *zoom:1;
+        list-style:none;
+        margin:0;
+        padding:0;
+        background: green;
+        opacity: .9;
+      }
+      .nav ul:before,.nav ul:after {
+        content:"";
+        display:table;
+      }
+      .nav ul:after {
+        clear:both;
+      }
+      .nav ul > li {
+        float:left;
+        position:relative;
+      }
+      .nav a {
+        display:block;
+        padding:10px 20px;
+        line-height:1.2em;
+        color:#fff;
+        border-left:1px solid green;
+      }
+      .nav a:hover {
+        text-decoration:none;
+        background: orange;
+        border-left:1px solid orange;
+        /*margin-top: 5px;*/
+      }
+      .nav li ul {
+        background: orange;
+        opacity: .9;
+        border-right: solid 1px green;
+        border-bottom: solid 1px green;
+        border-left: solid 1px green;
+      }
+      .nav li ul span {
+        color: white;
+        opacity: 1;
+        background-color: black;
+      }
+      .nav li ul li {
+        width:200px;
+      }
+      .nav li ul a {
+        border:none;
+      }
+      .nav li ul a:hover {
+        background:rgba(0,0,0,0.2);
+      }
+      .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .item{
+        flex-basis: auto;
+        flex-grow: 1;
+        min-width: 70px;
+      }
+
+      /*END animation*/
+
+
+    </style>
+    <!--<h2>[[name]]</h2>-->
+
+    <!--animation-->
+    <nav class="nav container">
+      <ul>
+        <li>
+          <a href="#" class="item">1 <sup>st</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall not mix logic with presentation</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">2<sup>nd</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall not hard code parameters</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">3 <sup>rd</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall follow single responsibility principle</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">4 <sup>th</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall not hard code your dependencies</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">5 <sup>th</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall not create large monolithic applications</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">6 <sup>th</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall break your application into smaller manageable reusable components</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">7 <sup>th</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall write self-documenting code</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">8 <sup>th</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall write code that others understand - avoid copy and paste from google</span></li></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="item">9 <sup>st</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall use design patterns</span></li></a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="item">10 <sup>st</sup></a>
+          <ul>
+            <li><a href="#"><li><span>You shall avoid anti patterns</span></li></a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- End animation-->
+
+    <ol class="square good">
+      <!--TODO: dim the words "You shall"-->
+      <li><span>You shall not mix logic with presentation</span></li>
+      <li><span>You shall not hard code parameters</span></li>
+      <li><span>You shall follow single responsibility principle</span></li>
+      <li><span>You shall not hard code your dependencies</span></li>
+      <li><span>You shall not create large monolithic applications</span></li>
+      <li><span>You shall break your application into smaller manageable reusable components</span></li>
+      <li><span>You shall write self-documenting code</span></li>
+      <li><span>You shall write code that others understand - avoid copy and paste from google</span></li>
+      <li><span>You shall use design patterns</span></li>
+      <li><span>You shall avoid anti patterns</span></li>
+    </ol>
+  </template>
+
+  <script>
+    /**
+     * `ten-commandments`
+     * United airlines 10 coding commandments
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class TenCommandments extends Polymer.Element {
+      static get is() { return 'ten-commandments'; }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: 'ten-commandments'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(TenCommandments.is, TenCommandments);
+  </script>
+</dom-module>

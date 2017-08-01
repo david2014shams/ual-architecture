@@ -12,6 +12,11 @@
     "images/**/*",
     "bower.json"
   ],
+  "builds": [{
+  "js": {"minify": true},
+  "css": {"minify": true},
+  "html": {"minify": true}
+}],
   "extraDependencies": [
     "manifest.json",
     "bower_components/webcomponentsjs/*.js"

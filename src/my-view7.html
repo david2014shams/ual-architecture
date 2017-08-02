@@ -1,0 +1,81 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
+<link rel="import" href="../bower_components/separation-concern/separation-concern.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view7"><!-- CSS Nightmare -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <h1>CSS Nightmare</h1>
+    <p>Before you quickly jump into writing your CSS, pause for a moment and think how future changes might affect your styles</p>
+    <p>For example, when you style your element based on its position in the DOM, if element is inside a form or if and element is the first child, what will happen 
+      when the business asked to add another element as the first element. Or, to move something to another area of DOM which is now outside your form.
+    </p>
+    <p>Seriously, think about using <code>components</code> which might take more time to develope but will be much more easier to style and reuse!</p>
+    <p>Swallow the bullet, and learn how to build components in your favorite framework. Coming from jQuery, where you are able to write your code in the 
+      first 15 minutes, creating components may be intimidating at first, however, I guarantee you, once you invest initial time, working with <code>components</code> will be fun!
+    </p>
+    <p>With <code>components</code> you can attach styles to each component which is still allowing desired global styles to pierce through your <code>shadow dom</code> at well, 
+      yet preventing your component's private styles from leaking out and poluting global style space.
+    </p>
+
+
+    <div class="dont"> Don't hard code your positioning and layout. Check
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"> A Complete Guide to Flexbox <sup>by Chris Coyier</sup></a>
+    </div>
+    <div>
+
+
+    <div class="do">Do discuss your styling strategies with your peers and how it might impact on long term maintainability and extensibility
+    </div>
+
+    <div class="dont">Don't bring entire libraries to achieve simple effects and animations.    </div>
+    <div class="do">Do use CSS3 to achieve animations and effects - it is pretty powerfull!    </div>
+
+    <!--<separation-concern></separation-concern>-->
+
+
+    <!--<demo-snippet>-->
+    <!--<template>-->
+
+    <!--<separation-concern></separation-concern>-->
+
+    <!--</template>-->
+    <!--</demo-snippet>-->
+
+
+    <marked-element>
+      <div slot="markdown-html"></div>
+      <script type="text/markdown">
+
+       ```javascript
+          
+        ```
+      </script>
+    </marked-element>
+
+  </template>
+
+  <script>
+      class MyView7 extends Polymer.Element {
+          static get is() { return 'my-view7'; }
+      }
+
+      window.customElements.define(MyView7.is, MyView7);
+  </script>
+</dom-module>

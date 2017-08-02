@@ -1,5 +1,16 @@
-# Polymer App Toolbox - Starter Kit
+# United Airlines Architecture
 
+##How to run
+* Installation:
+    ``Bower install``
+* Application is set up to work with **IIS**
+* Build ``Polymer build``
+* Point your IIS server to **build default** folder
+* Browe to [Point your browser to http://localhost](http://localhost)
+* For ``polymer serve`` to work you must change your relative links
+
+
+##Built with Polymer with Love!
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
 
 This template is a starting point for building apps using a drawer-based

@@ -14,10 +14,10 @@
 <link rel="import" href="../bower_components/separation-concern/separation-concern.html">
 <link rel="import" href="ual-ptc/ual-ptc.html">
 <link rel="import" href="ual-ptc-list/ual-ptc-list.html">
-<link rel="import" href="../bower_components/ten-commandments/ten-commandments.html">
+<link rel="import" href="../bower_components/ual-technical-standards/ual-technical-standards.html">
 
 
-<dom-module id="my-view6"><!--Separation of concern-->
+<dom-module id="my-view8"><!--Separation of concern-->
   <template>
     <style include="shared-styles">
       :host {
@@ -33,35 +33,30 @@
       }
     </style>
 
-    <h1>Components used in this documentation</h1>
-        <div class="do">Simplicity is the ultimate sophistication</div>
-    <img src="../images/Vinci-Quotes-1.jpg" alt="Simplicity is the ultimate sophistication" width="600" height="300">
-    <!-- <sup>Simplicity is the ultimate sophistication</sup> -->
-    <div class="do">When you properly develop your web components ( a <code>Sophistication</code> ) the usage of your components and developing 
-      your website with these components becomes easier ( a <code>Simplicity</code>). 
-      <sub>What you see bellow are simple HTML-like tags which behind the scene may encapsulates very complex logic and presentation in a reusable fasion.  
-        </sub> </div>
+    <h1>Technical Standards and how to enforce them</h1>
 
-    <h3><code>&ltual-ptc&gt</code></h3>
-    <ual-ptc></ual-ptc>
-
-    <h3><code>&ltual-ptc-list&gt</code></h3>
-    <ual-ptc-list></ual-ptc-list>
-
-    <h3><code>&ltseparation-concern&gt</code></h3>
-    <separation-concern></separation-concern>
-
-    <h3><code>&ltten-commandments&gt</code></h3>
-    <ten-commandments></ten-commandments>
-
+    <details>
+      <summary>Technical Standards</summary>
+      <ual-technical-standards></ual-technical-standards>
+    </details>
+    <details>
+      <summary>Review Steps</summary>
+      <ol class="square good">
+        <li><span>Developer should create their own branches.</span></li>
+        <li><span>Code commits must be done in small chuncks by the end of the day.</span></li>
+        <li><span>Pull requests should be created with at lease <code>2 approvers</code></span></li>
+        <li><span>Eac approver must follow and make sure the recommendations in the <code>Technical Standards</code> section have been met.</span></li>
+        <li><span>After both approvers approved the pull request, code can be merged</span></li>
+      </ol>
+    </details>
 
   </template>
 
   <script>
-      class MyView6 extends Polymer.Element {
-          static get is() { return 'my-view6'; }
+      class MyView8 extends Polymer.Element {
+          static get is() { return 'my-view8'; }
       }
 
-      window.customElements.define(MyView6.is, MyView6);
+      window.customElements.define(MyView8.is, MyView8);
   </script>
 </dom-module>

@@ -20,26 +20,7 @@
     <!--<h2>[[name]]</h2>-->
 
     <p>Which one will you choose as a base class, and which one as a special case ( a specific instance of that class ) ?</p>
-<<<<<<< HEAD
     <p>
-      <svg width="50" height="50">
-        2  <rect x="0" y="0" width="50" height="50" fill="green" />
-        3
-      </svg>
-      <svg width="100" height="50">
-        2  <rect x="0" y="0" width="100" height="50" fill="red" />
-        3
-      </svg>
-    </p>
-    <p>Obviously you could choose square as your base class, and pass just one parameter, say <code>side</code>.</p>
-    <p>This violates the Open / Close principle, because now if you need to make a rectangle you have to go and change the
-    code in your square class to have both a <code>height</code> parameter and a <code>width</code> parameter now.
-      But, then, if it is a square why you need both <code>height</code> and <code>width</code> ?? This violates the DRY principle.</p>
-    <p>So, how can we create clean <code>DRY</code> and <code>SOLID</code> code ??</p>
-    <p>Just after  little bit of thinking, we will realize that it is actually <code>rectangle</code> and not the <code>square</code>
-    which is the general case i.e. our <code>class</code>. And square is just a <code>special case</code> or an <code>instance</code> of the rectangel that
-    happened to have the same <code>width</code> and <code>height.</code></p>
-=======
     <svg width="50" height="50">
       2  <rect x="0" y="0" width="50" height="50" fill="green" />
       3
@@ -56,16 +37,11 @@
     <p>Just after  little bit of thinking, we will realize that it is actually <code>rectangle</code> and not the <code>square</code>
     which is the general case i.e. our <code>class</code>. And square is just a <code>special case</code> or an <code>instance</code> of the rectangel that
     happened to have the same <code>width</code> and <code>length.</code></p>
->>>>>>> ab84095b5b0508cc4b00d668bf4c6507eec0622e
     <p>Therefore, by choosing wisely our <code>classes</code> and <code>objects</code> we can have both a code that is <code>DRY</code>
       and <code>SOLID</code> !!</p>
     <div class="do">Do choose your <code>classes</code> and <code>objects</code> and <code>interface</code> wisely and do not jump into coding immediately!</div>
     <div class="dont">Do not confuse a more specific instance of your class, i.e. your <code>objects</code> with more general
-<<<<<<< HEAD
       reusable blue prints i.e. your <code>classes</code> !</div>
-=======
-      reusable blue print i.e. your <code>classes</code> !</div>
->>>>>>> ab84095b5b0508cc4b00d668bf4c6507eec0622e
 
     <!--TODO: complete to change rectangle into square :-->
     <!--<p>Change sizes bellow to turn this triangle ( a <code>class</code> ) into an instance of that class ( a square <code>object</code> ):-->
@@ -80,7 +56,6 @@
         <!--<paper-input label="width" value="{{swidth}}"></paper-input></div>-->
 
 
-    </p>
   </template>
 
   <script>

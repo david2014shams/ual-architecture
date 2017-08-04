@@ -2,6 +2,12 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/ten-commandments/ten-commandments.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-styles/element-styles/paper-material-styles.html">
+<link rel="import" href="../bower_components/ual-technical-standards/ual-technical-standards.html">
+
+
 
 <dom-module id="my-view1">
   <template>
@@ -19,12 +25,45 @@
         color: blue;
       }
       ten-commandments{
-                padding: 0.5em 10px;
+        padding: 0.5em 10px;
       }
+      paper-dialog.size-position {
+        vertical-align: center;
+        /*position: fixed;*/
+        position: relative;
+        /*top: 16px;*/
+        top: 50%;
+        left: 250px;
+        width: 600px;
+        height: 600px;
+        overflow: auto;
+        background-color: lightgoldenrodyellow;
+      }
+      paper-dialog paper-button {
+        position: relative;
+        bottom: 0;
+        right: 16px;
+        /*left: 250px;*/
+        background-color: red;
+        color: whitesmoke;
+        alignment: center;
+        opacity: .8;
+      }
+
     </style>
 
 
     <h1>UNITED AIRLINES COMPASS ARCHITECTURE</h1>
+
+
+    <!--<paper-button raised onclick="modal.open()">modal dialog</paper-button>-->
+
+      <paper-dialog class="size-position" id="modal" opened>
+        <h1>This document is not worth the paper it is written on if not followed by the <code>entire team</code> !</h1>
+        <div class="buttons">
+          <paper-button style="float: left" dialog-confirm autofocus onclick="modal.close()">Ok. I will follow or improve these guidelines!</paper-button>
+        </div>
+      </paper-dialog>
 
     <section>
       <blockquote>
@@ -74,12 +113,14 @@
 
       <div class="emphasize"><h3>We have to use them !</h3>
         <details>
-        <summary>10 coding commandments</summary>
-        <ten-commandments></ten-commandments>
+          <summary>10 coding commandments</summary>
+          <ten-commandments></ten-commandments>
         </details>
       </div>
 
-      
+
+
+
       <blockquote>
         If I have seen further it is by standing on the shoulders of giants. <sup>Sir Isaac Newton (1643 – 1727 )</sup>
       </blockquote>

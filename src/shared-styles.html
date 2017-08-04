@@ -54,11 +54,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-left: 10px solid #ccc;
         margin: 1.5em 10px;
         padding: 0.5em 10px;
-        quotes: "\201C""\201D""\2018""\2019";
+         quotes: "\201C""\201D""\2018""\2019"; 
       }
       blockquote:before {
         color: #ccc;
-        content: open-quote;
+        content: open-quote;    
         font-size: 4em;
         line-height: 0.1em;
         margin-right: 0.25em;
@@ -100,7 +100,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-left: 10px solid red; /*Do color*/
         margin: 1.5em 10px;
         padding: 0.5em 10px;
-        /*quotes: "\201C""\201D""\2018""\2019";*/
       }
       sup{
         font-style: italic;
@@ -148,6 +147,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       app-toolbar{
         background-color: orange; /*TODO: change to named colors*/
+      }
+      summary {
+        outline: none;
+        border: none;
+      }
+      summary:active {
+        /*transition: background-color 0.5s ease;*/
+        /*background-color: #fafad2;*/
+      }
+      summary:hover {
+        /*transition: background-color 0.5s ease;*/
+        /*background-color: #fafad2;*/
+        cursor: pointer;
+      }
+      sup{
+        color: grey;
+      }
+      h1 > a {
+        text-decoration: none;
+      }
+
+      details > p:not(code)::first-letter {
+        font-weight: bold;
+        text-transform: capitalize;
+        text-decoration: salmon;
+        /*color: darkgreen;*/
+        color: grey;
+        font-size: 1.5em;
+        font-style: italic;
+      }
+      h1::first-letter {
+        font-weight: bold;
+        text-transform: capitalize;
+        text-decoration: salmon;
+        /*color: darkgreen;*/
+        color: grey;
+        font-size: 2em;
+        font-style: italic;
       }
     </style>
   </template>

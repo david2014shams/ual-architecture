@@ -1,0 +1,39 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="ual-chat">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>[[name]]</h2>
+    <a href=”tel:618″>618</a>
+
+
+  </template>
+
+  <script>
+    /**
+     * `ual-chat`
+     * United Airlines chat component
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UalChat extends Polymer.Element {
+      static get is() { return 'ual-chat'; }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: 'ual-chat'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UalChat.is, UalChat);
+  </script>
+</dom-module>

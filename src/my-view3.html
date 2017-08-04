@@ -11,6 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/ual-solid/ual-solid.html">
+<link rel="import" href="../bower_components/ual-shapes/ual-shapes.html">
 
 <dom-module id="my-view3">
   <template>
@@ -19,6 +20,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
 
         padding: 10px;
+      }
+      .container{
+        position: relative;
+        border: solid 3px lightgray;
+        padding: 5em;
       }
     </style>
 
@@ -34,6 +40,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
 
     <ual-solid></ual-solid>
+    <div class="container">    <ual-shapes></ual-shapes>    </div>
 
     <h3>Resources</h3>
     <a href="https://app.pluralsight.com/library/courses/angularjs-patterns-clean-code/table-of-contents" target="_blank">AngularJS Patterns: Clean Code by John Papa</a>

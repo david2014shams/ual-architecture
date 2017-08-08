@@ -12,7 +12,7 @@
 <link rel="import" href="../bower_components/ual-branching-merging/ual-branching-merging.html">
 <link rel="import" href="shared-styles.html">
 
-<dom-module id="my-view9"><!-- CSS Nightmare -->
+<dom-module id="my-view10"><!-- CSS Nightmare -->
   <template>
     <style include="shared-styles">
       :host {
@@ -22,14 +22,14 @@
       }
     </style>
 
-    <h1>Branching & Merging</h1>
+    <h1>CI / CD with TeamCity</h1>
 
-    <div class="dont"> Don't check out directly from <code>main trunk</code>, change the code, and directly check-in to a<code>main trunk</code>. Check
-      <a href="https://www.visualstudio.com/en-us/docs/tfvc/branch-folders-files" target="_blank"> Branch folders and files<sup>by Microsoft</sup></a>
+    <div class="do"> We are using <code>TeamCity <sup>by JetBrains</sup></code>, for our CI / CD procsses.
+      <a href="https://www.jetbrains.com/teamcity/" target="_blank"> Check TeamCity<sup> by JetBrains</sup></a>
     </div>
 
 
-      <ual-branching-merging></ual-branching-merging>
+      <!--<ual-branching-merging></ual-branching-merging>-->
       <!--<separation-concern></separation-concern>-->
 
 
@@ -55,10 +55,10 @@
   </template>
 
   <script>
-      class MyView9 extends Polymer.Element {
-          static get is() { return 'my-view9'; }
+      class MyView10 extends Polymer.Element {
+          static get is() { return 'my-view10'; }
       }
 
-      window.customElements.define(MyView9.is, MyView9);
+      window.customElements.define(MyView10.is, MyView10);
   </script>
 </dom-module>

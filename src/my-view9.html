@@ -11,7 +11,7 @@
 <link rel="import" href="../bower_components/separation-concern/separation-concern.html">
 <link rel="import" href="shared-styles.html">
 
-<dom-module id="my-view7"><!-- CSS Nightmare -->
+<dom-module id="my-view9"><!-- CSS Nightmare -->
   <template>
     <style include="shared-styles">
       :host {
@@ -21,33 +21,36 @@
       }
     </style>
 
-    <h1>CSS Nightmare</h1>
-    <p>Before you quickly jump into writing your CSS, pause for a moment and think how future changes might affect your styles.
-      <br>
-    For example, when you style your element based on its position in the DOM, if element is inside a form or if and element is the first child, what will happen 
-      when the business asked to add another element as the first element. Or, to move something to another area of DOM which is now outside your form.
-    </p>
-    <p>Seriously, think about using <code>components</code> which might take more time to develope but will be much more easier to style and reuse!</p>
-    <p>Swallow the bullet, and learn how to build components in your favorite framework. Coming from jQuery, where you are able to write your code in the 
-      first 15 minutes, creating components may be intimidating at first, however, I guarantee you, once you invest initial time, working with <code>components</code> will be fun!
-    </p>
-    <p>With <code>components</code> you can attach styles to each component which is still allowing desired global styles to pierce through your <code>shadow dom</code> at well, 
-      yet preventing your component's private styles from leaking out and poluting global style space.
-    </p>
+    <h1>Branching & Merging</h1>
 
-
-    <div class="dont"> Don't hard code your positioning and layout. Check
-      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"> A Complete Guide to Flexbox <sup>by Chris Coyier</sup></a>
+    <div class="dont"> Don't check out directly from <code>main trunk</code>, change the code, and directly check-in to a<code>main trunk</code>. Check
+      <a href="https://www.visualstudio.com/en-us/docs/tfvc/branch-folders-files" target="_blank"> Branch folders and files<sup>by Microsoft</sup></a>
     </div>
     <div>
 
 
-    <div class="do">Do discuss your styling strategies with your peers and how it might impact on long term maintainability and extensibility
+    <div class="do">Create a new branch for each <code>Sprint</code>
+    </div>
+    <div class="do">Do follow Standard naming convention for each branch.
+      <ul>
+        <li>Compass.Sprint03.Team01</li>
+        <li>Compass.MileStone02.Team03</li>
+        <li>Compass.Feature05.Team02</li>
+      </ul>
     </div>
 
-    <div class="dont">Don't bring entire libraries to achieve simple effects and animations.    </div>
-    <div class="do">Do use CSS3 to achieve animations and effects - it is pretty powerfull !     </div>
 
+      <div class="do">
+      <p>If John Doe is a member of <code>Team01</code>, and if he is working on <code>Feature05</code>, then John Should: </p>
+        <ol class="square good">
+          <li><span>Create his own branch called <code>Compass.Feature05.Team01.John-Doe</code></span>.</li>
+          <li><span>Joh will work and makes changes to his on branches only, until he is ready to commit</span>.</li>
+          <li><span>John makes a pull request including 2 of his team members to the branch <code>Compass.Feature05.Team02</code></span>.</li>
+          <li><span>Only, after both team members have checked John's code against the <a name="view8" href="view8"><code>Technical Standards</code></a>, they approve the pull request</span>.</li>
+          <li><span>The code from <code>Compass.Feature05.Team02</code> is merged with <code>EQA</code> branch of <code>Compass.Feature05</code></span>.</li>
+          <li><span>Only after <code>EQA</code> process is finished positively, the code from <code>Compass.Feature05.Team02</code> is merged to <code>Compass</code></span>.</li>
+        </ol>
+      </div>
     <!--<separation-concern></separation-concern>-->
 
 
@@ -73,10 +76,10 @@
   </template>
 
   <script>
-      class MyView7 extends Polymer.Element {
-          static get is() { return 'my-view7'; }
+      class MyView9 extends Polymer.Element {
+          static get is() { return 'my-view9'; }
       }
 
-      window.customElements.define(MyView7.is, MyView7);
+      window.customElements.define(MyView9.is, MyView9);
   </script>
 </dom-module>

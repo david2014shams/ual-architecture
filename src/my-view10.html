@@ -1,0 +1,64 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+<link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
+<link rel="import" href="../bower_components/separation-concern/separation-concern.html">
+<link rel="import" href="../bower_components/ual-branching-merging/ual-branching-merging.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view9"><!-- CSS Nightmare -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <h1>Branching & Merging</h1>
+
+    <div class="dont"> Don't check out directly from <code>main trunk</code>, change the code, and directly check-in to a<code>main trunk</code>. Check
+      <a href="https://www.visualstudio.com/en-us/docs/tfvc/branch-folders-files" target="_blank"> Branch folders and files<sup>by Microsoft</sup></a>
+    </div>
+
+
+      <ual-branching-merging></ual-branching-merging>
+      <!--<separation-concern></separation-concern>-->
+
+
+      <!--<demo-snippet>-->
+      <!--<template>-->
+
+      <!--<separation-concern></separation-concern>-->
+
+      <!--</template>-->
+      <!--</demo-snippet>-->
+
+
+      <marked-element>
+        <div slot="markdown-html"></div>
+        <script type="text/markdown">
+
+       ```javascript
+          
+        ```
+      </script>
+      </marked-element>
+
+  </template>
+
+  <script>
+      class MyView9 extends Polymer.Element {
+          static get is() { return 'my-view9'; }
+      }
+
+      window.customElements.define(MyView9.is, MyView9);
+  </script>
+</dom-module>

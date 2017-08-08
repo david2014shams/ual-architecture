@@ -1,0 +1,63 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../../src/shared-styles.html">
+
+
+<dom-module id="ual-branching-merging">
+  <template>
+    <style include="shared-styles">
+
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>[[name]]</h2>
+
+
+    <div class="do">Create a new branch for each <code>Sprint</code>
+    </div>
+    <div class="do">Do follow Standard naming convention for each branch.
+      <ul>
+        <li>Compass.Sprint03.Team01</li>
+        <li>Compass.MileStone02.Team03</li>
+        <li>Compass.Feature05.Team02</li>
+      </ul>
+    </div>
+
+    <div class="do">
+      <p>If John Doe is a member of <code>Team01</code>, and if he is working on <code>Feature05</code>, then John Should: </p>
+      <ol class="square good">
+        <li><span>Create his own branch called <code>Compass.Feature05.Team01.John-Doe</code></span>.</li>
+        <li><span>Joh will work and makes changes to his on branches only, until he is ready to commit</span>.</li>
+        <li><span>John makes a pull request including 2 of his team members to the branch <code>Compass.Feature05.Team02</code></span>.</li>
+        <li><span>Only, after both team members have checked John's code against the <a name="view8" href="view8"><code>Technical Standards</code></a>, they approve the pull request</span>.</li>
+        <li><span>The code from <code>Compass.Feature05.Team02</code> is merged with <code>EQA</code> branch of <code>Compass.Feature05</code></span>.</li>
+        <li><span>Only after <code>EQA</code> process is finished positively, the code from <code>Compass.Feature05.Team02</code> is merged to <code>Compass</code></span>.</li>
+      </ol>
+    </div>
+
+  </template>
+
+  <script>
+    /**
+     * `ual-branching-merging`
+     * United Airlines TFS branching and merging guidelines
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UalBranchingMerging extends Polymer.Element {
+      static get is() { return 'ual-branching-merging'; }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: 'ual-branching-merging'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UalBranchingMerging.is, UalBranchingMerging);
+  </script>
+</dom-module>

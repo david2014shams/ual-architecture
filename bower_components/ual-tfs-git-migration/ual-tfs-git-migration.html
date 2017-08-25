@@ -1,0 +1,70 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../../src/shared-styles.html">
+
+
+<dom-module id="ual-tfs-git-migration">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+    <!--<h2>Hello [[name]]!</h2>-->
+
+
+
+    <h1>Let's keep our code base clean</h1>
+
+
+
+    <details>
+      <summary>How</summary>
+      <div class="do">
+      <ol type="square" class="square good">
+        <li><span >Keep single production ready trunk</span></li>
+        <li><span >Each team cut your branch - <code>already provided for you</code></span></li>
+        <li><span >Each team member create your branch - keep the nameing convention: e.g. <code>Compass.Team01.David</code></span></li>
+      </ol>
+      </div>
+      <div class="dont">
+      <ol >
+        <li><span>Do not check in<code> .gitignore</code>, only under special circumstances. Add all the files/directories you do not want to check-in in your <code>.gitignore </code>and <b>do not check in your <code>.gitignore</code></b></span></li>
+      </ol>
+      </div>
+    </details>
+
+
+    <h1>Training</h1>
+    <blockquote>
+      Perhaps the biggest challenge in migrating to Git is helping developers understand how Git stores changes and how commits form a history of development. It’s not enough to just prepare a “cheat sheet” that maps commands in the old system to Git commands: your developers need to stop thinking about version control history in terms of a centralized, linear model and need to understand Git’s history model and the commit graph.
+    </blockquote>
+    <div>
+      <a href="https://www.visualstudio.com/learn/centralized-to-git/">Direct quote from Microsoft!</a>
+    </div>
+
+  </template>
+
+  <script>
+    /**
+     * `ual-tfs-git-migration`
+     * Migrate TFVC to Git
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UalTfsGitMigration extends Polymer.Element {
+      static get is() { return 'ual-tfs-git-migration'; }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: 'ual-tfs-git-migration'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UalTfsGitMigration.is, UalTfsGitMigration);
+  </script>
+</dom-module>
